@@ -1,7 +1,14 @@
-import urllib.request
-import random
-def download_image(url):
-    name = random.randrange(1,100)
-    full_name = str(name) + '.jpg'
-    urllib.request.urlretrieve(url, full_name)
-download_image('https://....')
+class Myclass:
+    life = 3
+    def attack(self):
+        print('maman')
+        self.life -= 1
+
+    def checkLife(self):
+        if self.life <= 0:
+            print('maman na nga ')
+        else:
+            print(str(self.life) + 'life left ')
+myclass1 = Myclass()
+myclass1.attack()
+myclass1.checkLife()
